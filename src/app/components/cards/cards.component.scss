@@ -1,0 +1,21 @@
+.card {
+    background-color: white;
+    max-width: 300px;
+    color: black;
+    border-radius: 10px;
+
+    // NESTING:
+
+    &-img { // Para llamar al div card-img.
+        &_img { // Para llamar a cada elemento específico que hay dentro del div card-img.
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+    &-info {
+        padding: 24px 16px;
+        &_precio {
+            font-weight: bold;
+        }
+    }
+}
